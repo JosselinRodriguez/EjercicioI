@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f9fc;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.user-info {
+    margin-bottom: 20px;
+}
+
+#user-picture {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid #e0e4f1;
+}
+
+#user-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3c4a57;
+}
+
+#user-email,
+#user-location {
+    font-size: 16px;
+    color: #697a8d;
+}
+
+#refresh-btn {
+    background-color: #5063f3;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#refresh-btn:hover {
+    background-color: #4152c7;
+}
+
+
+/* Hacer que la página sea responsive */
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+    #refresh-btn {
+        width: 100%;
+    }
+}
